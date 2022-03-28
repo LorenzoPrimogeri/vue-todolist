@@ -24,7 +24,7 @@
                 <ul>
                     <li v-for="(element, index) in todoArray">
                         <div :class="verificaDoneElemento(element)" @click="changeDone(element)">
-                            <i class="fas fa-times p-3" @click="remove(index)"></i>
+                            <i :class="verificaIconaElemento(element)" @click="remove(index)"></i>
                             {{element.text}}
                         </div>
                     </li>

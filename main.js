@@ -42,6 +42,13 @@ const app = new Vue({
                 return "text-decoration-line-through";
             }
         },
+        verificaIconaElemento(element) {
+            if (element.done == false) {
+                return "fas fa-times p-3";
+            } else {
+                return "fa-solid fa-check p-3";
+            }
+        },
         remove(index) {
             this.todoArray.splice(index, 1);
         },
@@ -57,7 +64,6 @@ const app = new Vue({
             }
         },
         changeDone(element) {
-            console.log(element.done);
             if (element.done) {
                 element.done = false;
             } else {

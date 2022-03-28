@@ -1,5 +1,5 @@
 .container{
-    background-color: aqua;
+    background-color: #8fd0d0;
 }
 
 ul{
@@ -11,6 +11,11 @@ ul li{
 }
 i{
     cursor: pointer;
+}
+.fa-check{
+    color: lawngreen;
+}
+.fa-times{
     color: red;
 }
 .c-white{
