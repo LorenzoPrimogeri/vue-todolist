@@ -22,10 +22,13 @@
             <div class="col-12">
                 <h1 class="text-center">To Do List</h1>
                 <ul>
-                    <li v-for="(element, index) in todoArray">
+                    <li v-for="(element, index) in todoArray" class="d-flex justify-content-between align-items-center">
                         <div :class="verificaDoneElemento(element)" @click="changeDone(element)">
-                            <i :class="verificaIconaElemento(element)" @click="remove(index)"></i>
+                            <i :class="verificaIconaElemento(element)"></i>
                             {{element.text}}
+                        </div>
+                        <div>
+                            <a @click="remove(index)" class="p-3 text-decoration-none c-white">Remove</a>
                         </div>
                     </li>
                     <li class="border-0 text-center pt-3">
