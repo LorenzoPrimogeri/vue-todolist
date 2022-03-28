@@ -55,6 +55,16 @@ const app = new Vue({
                 this.todoArray.unshift(newTask);
                 this.task = "";
             }
+        },
+        changeDone(element) {
+            console.log(element.done);
+            if (element.done) {
+                element.done = false;
+            } else {
+                element.done = true;
+            }
+
         }
     },
+
 });
