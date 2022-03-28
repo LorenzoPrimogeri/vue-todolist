@@ -1,0 +1,22 @@
+.container{
+    background-color: aqua;
+}
+
+ul{
+    list-style-type: none;
+}
+ul li{
+    border: 1px solid black;
+}
+i{
+    cursor: pointer;
+}
+.c-white{
+    color: white;
+}
+.lp-btn{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 25%;
+    
+}
