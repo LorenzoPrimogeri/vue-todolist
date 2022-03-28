@@ -16,7 +16,6 @@ Bonus:
 invertire il valore della proprietà done del todo corrispondente
 (se done era uguale a false, impostare true e viceversa) 
 */
-
 const todoArray = [
     {
         text: "lavare i piatti",
@@ -31,7 +30,6 @@ const todoArray = [
         done: true,
     }
 ]
-
 const app = new Vue({
     el: "#app",
     data: {
@@ -53,10 +51,10 @@ const app = new Vue({
                 done: true
             }
             if (newTask.text.length > 0) {
+                //uso unshift per metterlo in cima e non alla fine
                 this.todoArray.unshift(newTask);
                 this.task = "";
             }
-
         }
     },
 });

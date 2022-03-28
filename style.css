@@ -10,6 +10,7 @@ ul li{
 }
 i{
     cursor: pointer;
+    color: red;
 }
 .c-white{
     color: white;
@@ -18,5 +19,5 @@ i{
     border: 1px solid red;
     background-color: red;
     border-radius: 25%;
-    
+
 }

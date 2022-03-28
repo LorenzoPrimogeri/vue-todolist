@@ -30,7 +30,8 @@
                     </li>
                     <li class="border-0 text-center pt-3">
                         <div>
-                            <input type="text" v-model="task" placeholder="Write what you need to do" class="w-50">
+                            <input type="text" v-model="task" placeholder="Write what you need to do" class="w-50"
+                                @keyup.enter="addNewTask">
                             <button @click="addNewTask" class="lp-btn c-white p-1">add</button>
                         </div>
                     </li>
