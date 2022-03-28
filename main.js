@@ -54,7 +54,7 @@ const app = new Vue({
             }
             if (newTask.text.length > 0) {
                 this.todoArray.unshift(newTask);
-                this.newTask = "";
+                this.task = "";
             }
 
         }
